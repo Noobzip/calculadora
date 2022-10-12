@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    border-radius: 10px;
+  }
+  
+  body {
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+  }
+  
+  #calculadora {
+    width: 300px;
+    padding: 0.5em;
+    background-color: #4b4b4b;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #calculadora h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+  
+  #operacoes {
+    text-align: right;
+    color: #000;
+  }
+  
+  #p-op {
+    color: rgb(179, 179, 179);
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+  }
+  
+  #c-op {
+    color: #fff;
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+  }
+  
+  /* Cria a divisão entre os botões */
+  #butaozinhos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+  
+  #butaozinhos button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #202020;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #butaozinhos .numeros {
+    background-color: #000000;
+  }
+  
+  #butaozinhos button:hover {
+    background-color: #bababa;
+  }
+
+  #butaozinhos #apagar {
+    color: #202020;
+  }
+  
+  #butaozinhos #igualzin {
+    grid-column: span 2;
+    background-color: #5192c7;
+  }
+  
+  #butaozinhos #igualzin:hover {
+    grid-column: span 2;
+    background-color: #2288db;
+  }
